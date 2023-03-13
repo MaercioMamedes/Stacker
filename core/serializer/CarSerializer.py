@@ -6,3 +6,6 @@ class CarSerializer(serializers.ModelSerializer):
     class Meta:
         model = Car
         fields = '__all__'
+
+    def validate(self, attrs):
+        return attrs
