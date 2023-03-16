@@ -3,11 +3,13 @@ from datetime import datetime
 
 
 def get_stack(stack):
-
+    """Função para buscar a pilha de carros no pátio"""
     def format_date_time(input_in):
+        """Formatação da data e hora"""
         date_time = timezone.localtime(input_in)
         return date_time.strftime('%d-%m-%Y %H:%M:%S')
 
+    """Fortação do objeto carro, para estrutura de dicionário"""
     return list(
         map(
             lambda car_stack:

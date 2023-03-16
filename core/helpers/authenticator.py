@@ -1,6 +1,8 @@
 from rest_framework_api_key.models import APIKey
 from django.utils.datastructures import MultiValueDictKeyError
 
+"""Função para atenticar API KEY da requisição"""
+
 
 def authenticator(request):
 
